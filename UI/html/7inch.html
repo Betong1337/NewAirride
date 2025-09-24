@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data:; img-src 'self' https: data: *;">
+    <link rel="stylesheet" href="../css/default_7inch.css">
+    <title>Air-Ride</title>
+</head>
+<body>
+    <div class="angry-grid">
+        <div id="item-0">
+            <h1>Airride Control</h1>
+            <a class="link setting-link-only-airride" href="./on-airride-settings-7inch.html"><img src="../imgs/settings.png" width="32" height="32"></a>
+        </div>
+
+        <div id="item-1">
+            <ul class="ul-preset">
+                <li>
+                    <button class="preset main_btn" id="preset-lifted-Btn">Lifted</button>
+                </li>
+                <li>
+                    <button class="preset main_btn" id="preset-normal-Btn">Normal</button>
+                </li>
+                <li>
+                    <button class="preset main_btn" id="preset-lowered-Btn">Lowered</button>
+                </li>
+            </ul>
+        </div>
+        <div id="item-2">
+            <ul>
+                <li>
+                    <label class="lbl-air-checkbox txt" for="air-checkbox-front">Front</label>
+                </li>
+                <li>
+                    <input id="air-checkbox-front" class="checkbox" 
+                        value="front" type="checkbox"> 
+
+                </li>
+                <li>
+                    <label class="lbl-air-checkbox txt" for="air-checkbox-rear">Rear</label>
+                </li>
+                <li>
+                    <input id="air-checkbox-rear" class="checkbox"
+                       value="rear" type="checkbox"> 
+                </li>
+                <li>
+                    <label for="switch-manual-mode" class="txt">Manual Mode</label>
+                    <br>
+                    <br>
+                    <div class="switch" id="switch-manual-mode">
+                        <input class="only-airride-toggle-bg" type="checkbox" id="toggle-manual-mode"/>
+                        <label for="toggle-manual-mode"></label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="item-3">
+            <ul class="ul-manual">
+                <li>
+                    <button class="manual main_btn" id="manual-btn-raise">Raise</button>
+                </li>
+                <li>
+                    <button class="manual main_btn" id="manual-btn-lower">Lower</button>
+                </li>
+            </ul>
+        </div>
+        <div id="item-4">
+            <div class="value-display">
+                <div class="value-item">
+                    <label for="value-FR" class="value-label">FR:</label>
+                    <span id="value-FR" class="value">0</span>
+                </div>
+                <div class="value-item">
+                    <label for="value-FL" class="value-label">FL:</label>
+                    <span id="value-FL" class="value">0</span>
+                </div>
+                <div class="value-item">
+                    <label for="value-RR" class="value-label">RR:</label>
+                    <span id="value-RR" class="value">0</span>
+                </div>
+                <div class="value-item">
+                    <label for="value-RL" class="value-label">RL:</label>
+                    <span id="value-RL" class="value">0</span>
+                </div>
+            </div>
+        </div>
+        <div id="item-5">
+            <div class="img-container">
+                <img class="height-img" id="car-height-image" src="">
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/renderer.js"></script>
+</body>
+</html>

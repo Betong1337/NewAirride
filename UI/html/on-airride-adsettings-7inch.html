@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/default-only-airride.css">
+    <title>Air-Ride</title>
+  </head>
+  <body>
+    <div class="main_container-only-airride">
+
+        <button id="only-airride-settings-txt-submit" class="settings-apply-btn">Apply</button>
+        <a href="on-airride-settings-7inch.html" class="settings-apply-btn">Go back</a>
+        <button id="reset-default-btn" class="settings-apply-btn">Reset Settings to Default</button>
+        <div class="setTextSettings-container">
+            <label for="only-airride-settings-txt-value" class="lbl">Set sensor values</label>
+            <br>
+            <br>
+            <select class="select-element-settings" name="only-airride-text-select" id="only-airride-text-select">
+              <option class="option-element-settings" value="Lifted">Lifted</option>
+              <option class="option-element-settings" value="Normal">Normal</option>
+              <option class="option-element-settings" value="Lowered">Lowered</option>
+            </select>
+            <br>
+            <br>
+            <input id="only-airride-settings-txt-value" name="settings-txt-value" class="settings-input-value" type="text">
+            <br>
+            <br>
+            
+        <button id="reset-airsuspension-busy" class="settings-apply-btn">Set Busy to false</button>
+        </div>
+        <div class="theme-color-container">
+        </div>
+    </div>
+  </body>
+  <script src="../js/renderer.js"></script>
+</html>

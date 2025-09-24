@@ -1,0 +1,24 @@
+
+
+GPIO:
+    Preset [
+        1. Hämta värden från sensorerna *
+        2. Kolla om bilen redan är i det läget *
+        3. Kolla om fjädringen är upptagen OM inte upptagen gör upptagen *
+        4. Lyft/sänk hela bilen tills ett av sensorerna är i rätt höjd *
+        5. Kolla om de andra sensorerna är i rätt höjd annars höj/sänk *
+        6. gör bilen ledig och uppdatera allt i json filerna *
+    ]
+    Manual [
+        Om manuella läget är på fungerar inte preset och auto-leveling
+        Bilen kan inte gå under min värdet och kan inte gå över max värdet
+
+        1. Hämta min och max värden från json fil.
+        2. Kolla om fjädringen är upptaget OM inte gör upptagen
+        2. Hämta vilka sidor man ska köra från checkbox
+        3. Lyft/sänk tills knappen släpps eller min/max värdet är uppnåt
+        4. Gör bilen ledig
+    ]
+
+UI:
+    Kan inte klicka ner alert. *

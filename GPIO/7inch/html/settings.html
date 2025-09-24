@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="../css/default.css">
+    <title>Settings</title>
+  </head>
+  <body>
+    <nav id="sidebar" class="sidebar">
+        <ul class="ul">
+            <li class="sidebar_li">
+                <img class="logo" src="../imgs/logo.png" width="80" height="26,75">
+            </li>
+            <li class="sidebar_li">
+                <a href="./index.html">
+                    <button class="button sidebar_btn">Air-Ride</button>
+                </a>
+            </li>
+            <li class="sidebar_li">
+                <a href="./lights.html">
+                    <button class="button sidebar_btn">Lights</button>
+                </a>
+            </li>
+            <li class="sidebar_li">
+                <a href="./navigation.html">
+                <button class="button sidebar_btn">Nav</button>
+                </a>
+            </li>
+            <li class="sidebar_li">
+                <button class="button sidebar_btn">Air-Ride</button>
+            </li>
+            <li class="sidebar_li">
+                <a href="./settings.html">
+                    <button class="button sidebar_btn" >Settings</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="main_container">
+        <div class="settings-selector-container">
+            <a class="settings-selector-link" href="#">setting</a>
+            <a class="settings-selector-link" href="#">setting</a>
+            <a class="settings-selector-link" href="./themesettings.html">Theme</a>
+        </div>
+    </div>
+  </body>
+  <script src="../js/renderer.js"></script>
+</html>

@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.h1_airride {
+    position: fixed;
+    margin-left: 200px;
+    font-family: 'Courier New', monospace;
+    font-size: 30px;
+    color: white;
+}
+
+h2 {
+    font-family: 'Courier New', monospace;
+    color: white;
+}
+a {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.main_container {
+    background-color: #1E1E1E;
+    position: fixed;
+    width: 700px;
+    height: 480px;
+    margin-left: 100px;
+    
+}
+.preset_container {
+    position: fixed;
+    margin-left: 50px;
+    margin-top: 100px;
+    text-align: center;
+}
+.checkbox_container {
+    position: fixed;
+    margin-left: 250px;
+    margin-top: 125px;
+}
+
+.lights-rock-mode {
+    width: auto;
+    height: 50px;
+    font-size: 15px;
+    font-family: 'Courier New', monospace;
+    background-color: #302f2f;
+    color: white;
+}
+
+.option_lights {
+    font-size: 15px;
+    font-family: 'Courier New', monospace;
+}
+
+.lights-dropdown-container {
+    position: fixed;
+    margin-left: 500px;
+    margin-top: 130px;
+    font-size: 20px;
+}
+
+.manual-container {
+    margin-top: 230px;
+    margin-left: 230px;
+}
+.sidebar {
+    position: fixed;
+    width: 100px;
+    height: auto;
+    min-height: 480px;
+    background-color: #302f2f;
+}
+
+.ul {
+    margin: 0;
+    padding: 12px;
+    list-style: none;
+}
+
+.sidebar_li {
+    margin-bottom: 15px;
+}
+
+.main_btn_li {
+    margin-bottom: 15px;
+}
+
+.settings-li {
+    margin-bottom: 15px;
+    margin-right: 45px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+.sidebar_btn {
+    background-color: #0080FF;
+    color: #FFFFFF;
+    width: 75px;
+    height: 42px;
+}
+  
+
+.main_btn {
+    width: 150px;
+    height: 50px;
+    background-color: #FF9800;
+    color: #FFFFFF;
+}
+.lights-btn {
+    width: 150px;
+    height: 50px;
+    background-color: #b50505;
+    color: #FFFFFF;
+}
+
+.airride_checkbox {
+    margin: 80px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.settings-selector-container {
+    padding: 40px;
+    text-align: center;
+    
+}
+.settings-selector-link {
+    text-decoration: none;
+    margin-right: 50px;
+    color: #db9647;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    font-weight: bold;
+}
+
+.settings-container {
+    margin-left: 50px;
+}
+
+.settings-lbl {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    font-weight: bold;
+    color: white;
+    margin-right: 210px;
+}
+
+.theme-color-input {
+    align-items: center;
+}
+
+
+.logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.preset.active {
+  background-color: #EF6C00;
+  color: #ffffff;
+}
+

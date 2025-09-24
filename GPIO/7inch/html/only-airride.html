@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data:; img-src 'self' https: data: *;">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/default-only-airride.css">
+    <title>Air-Ride</title>
+  </head>
+  <body>
+    <div class="main_container-only-airride">
+        <h1 class="h1_airride-only-airride txt">Custom Air-Ride</h1>
+        <a class="link setting-link-only-airride" href="./only-airride-settings.html"><img src="../imgs/settings.png" width="32" height="32"></a>
+
+        <div class="preset_container-only-airride">
+            <ul class="ul">
+                <li class="main_btn_li-only-airride">
+                    <button id="preset-lifted-Btn" class="button main_btn preset" value="preset-lifed-btn">Lifted</button>
+                </li>
+                <li class="main_btn_li-only-airride">
+                    <button id="preset-normal-Btn" class="button main_btn preset" value="preset-normal-btn">Normal</button>
+                </li>
+                <li class="main_btn_li-only-airride">
+                    <button id="preset-lowered-Btn" class="button main_btn preset" value="preset-lowered-btn">Lowered</button>
+                </li>
+                <li class="main_btn_li-only-airride">
+                    <button id="preset-extra-Btn" class="button main_btn" value="preset-extra-btn">Extra 1</button>
+                </li>
+            </ul>
+        </div>
+        <div class="checkbox_container-only-airride">
+            <ul class="ul">
+                <li>
+                    <label class="lbl-air-checkbox txt" for="air-checkbox-front">Front</label>
+                    <label class="lbl-air-checkbox txt" for="air-checkbox-flrl">FL & RL</label>
+                </li>
+                <li>
+                    <input id="air-checkbox-front" class="airride_checkbox-only-airride" 
+                        value="front" type="checkbox"> 
+
+                    <input id="air-checkbox-flrl" class="airride_checkbox-only-airride" 
+                        value="flrl" type="checkbox"> 
+                </li>
+                <li>
+                    <label class="lbl-air-checkbox txt" for="air-checkbox-rear">Rear</label>
+                    <label class="lbl-air-checkbox txt" for="air-checkbox-frrr">FR & RR</label>
+                </li>
+                    <li>
+                    <input id="air-checkbox-rear" class="airride_checkbox-only-airride"
+                       value="rear" type="checkbox"> 
+
+                    <input id="air-checkbox-frrr" class="airride_checkbox-only-airride" 
+                       value="frrr" type="checkbox">
+                </li>
+            </ul>
+        </div>
+        <div class="manual-container-only-airride">
+            <ul class="ul">
+                <li class="main_btn_li-only-airride">
+                    <button id="manual-btn-raise" class="button main_btn manual" 
+                    value="preset-extra-btn">Raise</button>
+                </li>
+                <li class="main_btn_li-only-airride">
+                    <button id="manual-btn-lower" class="button main_btn manual" 
+                    value="preset-extra-btn">Lower</button>
+                </li>
+            </ul>
+        </div>
+        <div class="sensor-container-only-airride">
+            <ul class="ul">
+                <li class="sensor-li">
+                    <span class="lbl sensor FL txt">FL:</span>
+                    <span class="lbl sensor sensor-FL-value txt">10</span>
+                    <span class="lbl sensor FR txt">FR:</span>
+                    <span class="lbl sensor sensor-FR-value txt">10</span>
+                </li>
+                <li class="sensor-li">
+                    <span class="lbl sensor RL txt">RL:</span>
+                    <span class="lbl sensor sensor-RL-value txt">10</span>
+                    <span class="lbl sensor RR txt">RR:</span>
+                    <span class="lbl sensor sensor-RR-value txt">10</span>
+                </li>
+            </ul>
+        </div>
+        <div class="img-container-only-airride">
+            <img id="car-height-image" src="" width="283" height="148">
+        </div>
+    </div>
+  </body>
+  <script src="../js/renderer.js"></script>
+</html>

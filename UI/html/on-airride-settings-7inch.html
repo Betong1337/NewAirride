@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/default-only-airride.css">
+    <title>Air-Ride</title>
+  </head>
+  <body>
+    <div class="main_container-only-airride">
+
+        <button id="only-airride-settings-txt-submit" class="settings-apply-btn">Apply</button>
+        <a href="7inch.html" class="settings-apply-btn">Go back</a>
+        <a href="on-airride-adsettings-7inch.html" class="settings-apply-btn">Advanced</a>
+        <button id="reset-default-btn" class="settings-apply-btn">Reset Settings to Default</button>
+        <div class="setTextSettings-container">
+            <label for="only-airride-settings-txt-value" class="lbl">Set Custom text</label>
+            <br>
+            <br>
+            <select class="select-element-settings" name="only-airride-text-select" id="only-airride-text-select">
+              <option class="option-element-settings" value="lifted">Lifted</option>
+              <option class="option-element-settings" value="normal">Normal</option>
+              <option class="option-element-settings" value="lowered">Lowered</option>
+            </select>
+            <br>
+            <br>
+            <input id="only-airride-settings-txt-value" name="settings-txt-value" class="settings-input-value" type="text">
+        </div>
+        <div class="setbackground-settings-container">
+            <label for="only-airride-settings-background-value" class="lbl">Set Background Image - URL</label>
+            <br>
+            <br>
+            <input id="only-airride-settings-background-value" class="settings-input-value" type="text">
+            <br>
+            <br>
+            <label for="only-airride-toggle-bg" class="lbl">Enable background Image</label>
+            <br>
+            <br>
+            <div class="switch">
+              <input class="only-airride-toggle-bg" type="checkbox" id="toggle"/>
+              <label for="toggle"></label>
+            </div>
+        </div>
+        <div class="theme-color-container">
+            <ul class="ul">
+              <li class="settings-li">
+                <label class="settings-lbl-only-airride" for="preset-btn-color">Button color</label>
+              </li>
+              <li class="settings-li">
+                <input type="color" class="input-color" id="preset-btn-color" value="#FF9800">
+              </li>
+
+              <li class="settings-li">
+                <label class="settings-lbl-only-airride" for="preset-btn-text-color">Button text color</label>
+              </li>
+              <li class="settings-li">
+                <input type="color" class="input-color" id="preset-btn-text-color" value="#FFFFFF">
+              </li>
+
+              <li class="settings-li">
+                <label class="settings-lbl-only-airride" for="other-text-color">Other Text color</label>
+              </li>
+              <li class="settings-li">
+                <input type="color" class="input-color" id="other-text-color" value="#FFFFFF">
+              </li>
+
+              <li class="settings-li">
+                <label class="settings-lbl-only-airride" for="bg-color">Background Color</label>
+              </li>
+              <li class="settings-li">
+                <input type="color" class="input-color" id="bg-color" value="#1E1E1E">
+              </li>
+            </ul>
+        </div>
+    </div>
+  </body>
+  <script src="../js/renderer.js"></script>
+</html>
